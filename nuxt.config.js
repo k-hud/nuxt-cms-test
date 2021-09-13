@@ -1,5 +1,7 @@
 const pkg = require('dotenv').config
 
+console.log(process.env.DEV_API)
+
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
