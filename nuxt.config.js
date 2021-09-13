@@ -1,3 +1,5 @@
+const pkg = require('dotenv').config
+
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
@@ -43,7 +45,7 @@ export default {
     [
       'storyblok-nuxt',
       {
-        accessToken: '4lQMi1bfkSEPN5wP06SWxwtt',
+        accessToken: process.env.PROD_API,
         cacheProvider: 'memory'
       }
     ],
